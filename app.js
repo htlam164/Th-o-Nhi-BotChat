@@ -29,6 +29,6 @@ app.use(controllers);
 
 var host = config.get("server.host");
 var port = config.get("server.port");
-app.listen(process.env.port || port, function() {
+app.listen(process.env.PORT, function() {
     console.log("Server is running on port", port);
 });
