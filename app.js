@@ -3,7 +3,6 @@ var express = require("express");
 var socketio = require("socket.io");
 
 var app = express();
-port = 3000;
 app.set("views", __dirname + "/apps/views");
 app.set("view engine", "ejs");
 
