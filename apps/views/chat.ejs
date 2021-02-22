@@ -80,7 +80,7 @@
         });
 
         socket.on("update_message", function(data) {
-            $("#messages").append("<li> <b>" + data.sender + ": </b>" + data.message) + "</li>";
+            $("#messages").append("<li> <b>" + data.sender + ": </b>" + data.message + "</li>");
         });
 
         //send message Event
@@ -104,7 +104,6 @@
                 $("#btn_send").trigger("click");
             }
         })
-        $('.container').scrollTop($('.container')[0].scrollHeight);
     </script>
 </body>
 
