@@ -46,7 +46,7 @@ module.exports = function(io) {
             //Delete username
             for (var i = 0; i < usernames.length; i++) {
                 if (usernames[i] == socket.username) {
-                    usernames.splice(i, -1);
+                    usernames.splice(i, 1);
                 }
             }
             var data = {
