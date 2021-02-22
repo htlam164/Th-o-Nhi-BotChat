@@ -51,7 +51,7 @@ module.exports = function(io) {
             }
             var data = {
                 sender: "SERVER",
-                message: socket.username + "left chat room"
+                message: socket.username + " left chat room"
             };
             socket.broadcast.emit("update_message", data);
         })

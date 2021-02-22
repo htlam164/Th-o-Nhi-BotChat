@@ -1,19 +1,14 @@
 var express = require("express");
 var config = require("config");
-var bodyParser = require("body-parser");
 
 var socketio = require("socket.io");
 
 var app = express();
-//body parser
-
-
 
 app.set("views", __dirname + "/apps/views");
 app.set("view engine", "ejs");
 
 // Static folder
-app.use("/static", express.static(__dirname + "/public"));
 
 var controllers = require(__dirname + "/apps/controllers");
 
