@@ -18,10 +18,8 @@
     },
     "homepage": "https://github.com/htlam164/Thao-Nhi-BotChat#readme",
     "dependencies": {
-        "config": "^3.3.3",
         "ejs": "^3.1.6",
         "express": "^4.17.1",
-        "q": "^1.5.1",
         "socket.io": "^3.1.1"
     }
 }

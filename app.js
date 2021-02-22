@@ -1,10 +1,9 @@
 var express = require("express");
-var config = require("config");
 
 var socketio = require("socket.io");
 
 var app = express();
-
+port = 3000;
 app.set("views", __dirname + "/apps/views");
 app.set("view engine", "ejs");
 
@@ -14,12 +13,10 @@ var controllers = require(__dirname + "/apps/controllers");
 
 app.use(controllers);
 
-var host = config.get("server.host");
-var port = config.get("server.port");
-var server = app.listen(process.env.PORT || port, host, function() {
+var server = app.listen(3000, function() {
     console.log("Server is running on port", port);
 });
-// // 
+// // process.env.PORT
 ///asd
 
 var io = socketio(server);
