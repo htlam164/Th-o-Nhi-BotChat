@@ -27,7 +27,8 @@ var port = config.get("server.port");
 var server = app.listen(process.env.PORT || port, host, function() {
     console.log("Server is running on port", port);
 });
-// //
+// // 
+///asd
 
 var io = socketio(server);
 var socketcontrol = require("./apps/common/socketcontrol")(io);
