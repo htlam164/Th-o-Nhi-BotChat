@@ -6,9 +6,6 @@ var socketio = require("socket.io");
 
 var app = express();
 //body parser
-app.use(bodyParser.json());
-
-app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
