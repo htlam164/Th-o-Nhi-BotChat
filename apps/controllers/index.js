@@ -5,9 +5,13 @@ var router = express.Router();
 router.use("/admin", require(__dirname + "/admin"));
 router.use("/blog", require(__dirname + "/blog"));
 
-router.get("/", function(reg, res){
+router.get("/", function(reg, res) {
     //res.json({"message": "This is Home Page"});
     res.render("test");
+});
+
+router.get("/chat", function(req, res) {
+    res.render("chat");
 });
 
 module.exports = router;
